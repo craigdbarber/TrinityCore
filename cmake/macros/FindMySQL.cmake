@@ -18,7 +18,7 @@ if(UNIX)
     "preferred path to MySQL (mysql_config)"
   )
 
-  find_program(MYSQL_CONFIG mysql_config
+  find_program(MYSQL_CONFIG mariadb-config
     ${MYSQL_CONFIG_PREFER_PATH}
     /usr/local/mysql/bin/
     /usr/local/bin/
@@ -86,6 +86,7 @@ find_path(MYSQL_INCLUDE_DIR
     /usr/local/include
     /usr/local/include/mysql
     /usr/local/mysql/include
+    /usr/include/mariadb
     "${PROGRAM_FILES_64}/MySQL/MySQL Server 8.0/include"
     "${PROGRAM_FILES_64}/MySQL/MySQL Server 5.7/include"
     "${PROGRAM_FILES_64}/MySQL/include"
