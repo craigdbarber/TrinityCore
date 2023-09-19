@@ -19,13 +19,16 @@
 
 // The name of this function should match:
 // void Add${NameOfDirectory}Scripts()
+
 void AddSC_skip_StarterArea();
 void AddSolocraftScripts();
 void Add_paymaster_npc();
+void AddSC_npc_teleport();
 
 void AddCustomScripts()
 {
     AddSC_skip_StarterArea();
     AddSolocraftScripts();
     Add_paymaster_npc();
+    AddSC_npc_teleport();
 }
