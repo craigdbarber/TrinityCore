@@ -21,9 +21,11 @@
 // void Add${NameOfDirectory}Scripts()
 void AddSC_skip_StarterArea();
 void AddSolocraftScripts();
+void Add_paymaster_npc();
 
 void AddCustomScripts()
 {
     AddSC_skip_StarterArea();
     AddSolocraftScripts();
+    Add_paymaster_npc();
 }
