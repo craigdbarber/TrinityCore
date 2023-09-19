@@ -1601,7 +1601,7 @@ void Group::CountTheRoll(Rolls::iterator rollI, Map* allowedMap)
                             {
                                 LootItem* lootItem = loot.LootItemInSlot(i, player);
                                 player->SendEquipError(msg, nullptr, nullptr, lootItem->itemid);
-                                player->SendItemRetrievalMail(lootItem->itemid, lootItem->count);
+                                player->SendItemRetrievalMail({ { lootItem->itemid, static_cast<uint32>(lootItem->count), lootItem->randomPropertyId } });
                             }
                         }
                     }
